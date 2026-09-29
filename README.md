@@ -3,7 +3,8 @@
 
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0%2B-EE4C2C.svg)](https://pytorch.org/)
-[![Gymnasium](https://img.shields.io/badge/Gymnasium-Environment-008080.svg)](https://gymnasium.farama.org/)
+[![Zero Gym Dependency](https://img.shields.io/badge/Gym--Free-100%25%20Pure%20Native-008080.svg)]()
+[![Snowflake Ready](https://img.shields.io/badge/Snowflake-Preinstalled%20Env%20Ready-29B5E8.svg)]()
 [![Qwen 8B](https://img.shields.io/badge/LLM-Qwen2.5--8B-purple.svg)](https://huggingface.co/Qwen/Qwen2.5-8B-Instruct)
 [![Multi-GPU](https://img.shields.io/badge/Hardware-Multi--GPU%20%2F%20CPU%20Parallel-green.svg)]()
 [![Offline Ready](https://img.shields.io/badge/Environment-100%25%20Offline%20Ready-success.svg)]()
@@ -122,15 +123,14 @@ crypto-rl-trading-system/
 
 ## 🚀 Quick Start Guide
 
-### 1. Installation
+### 1. Installation & Environment
+
+**Zero pip installation required on Snowflake!** All required dependencies (`torch`, `pandas`, `numpy`, `matplotlib`, `transformers`, `scipy`, `tqdm`) are already pre-installed in Snowflake's default workspace runtime. The codebase contains **zero external gym/gymnasium dependencies** and uses native pure-Python/NumPy state-space primitives.
 
 ```bash
 # Clone the repository
 git clone https://github.com/fgbvdcfgbfdefgb/crypto-rl-trading-system.git
 cd crypto-rl-trading-system
-
-# Install dependencies
-pip install -r requirements.txt
 ```
 
 ### 2. Start Training (Multi-GPU / Multi-Worker)

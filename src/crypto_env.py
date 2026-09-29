@@ -1,24 +1,58 @@
 """
-Gymnasium-compatible Cryptocurrency Trading Environment.
-Simulates realistic 1-minute order execution, fees, slippage, and Qwen 8B news state integration.
+Native Cryptocurrency Trading Environment (Zero external Gym/Gymnasium dependencies).
+Compatible with all Python environments including Snowflake, AWS SageMaker, and standard PyTorch runtimes.
 """
 
-import gymnasium as gym
-from gymnasium import spaces
 import numpy as np
 import pandas as pd
-from typing import Dict, Any, Tuple, Optional
+from typing import Dict, Any, Tuple, Optional, List
 
 from .config import TradingConfig
 from .data_loader import CryptoDataLoader
 from .qwen_engine import QwenNewsEngine
 
 
-class CryptoTradingEnv(gym.Env):
+class DiscreteSpace:
+    """Lightweight pure-python discrete action space."""
+    def __init__(self, n: int):
+        self.n = int(n)
+
+    def sample(self, seed: Optional[int] = None) -> int:
+        rng = np.random.RandomState(seed) if seed is not None else np.random
+        return int(rng.randint(0, self.n))
+
+    def contains(self, x: Any) -> bool:
+        return isinstance(x, (int, np.integer)) and 0 <= int(x) < self.n
+
+    def __repr__(self) -> str:
+        return f"DiscreteSpace({self.n})"
+
+
+class BoxSpace:
+    """Lightweight pure-python continuous box observation space."""
+    def __init__(self, low: float, high: float, shape: Tuple[int, ...], dtype=np.float32):
+        self.low = low
+        self.high = high
+        self.shape = shape
+        self.dtype = dtype
+
+    def sample(self, seed: Optional[int] = None) -> np.ndarray:
+        rng = np.random.RandomState(seed) if seed is not None else np.random
+        return rng.uniform(low=-1.0, high=1.0, size=self.shape).astype(self.dtype)
+
+    def contains(self, x: np.ndarray) -> bool:
+        return isinstance(x, np.ndarray) and x.shape == self.shape
+
+    def __repr__(self) -> str:
+        return f"BoxSpace(shape={self.shape}, dtype={self.dtype})"
+
+
+class CryptoTradingEnv:
     """
-    Simulates a 1-day (1440 1-minute steps) cryptocurrency trading session with $2,000 starting cash.
+    Zero-dependency 1-Day (1440 1-minute steps) Cryptocurrency Trading Environment.
+    Simulates $2,000 starting capital, realistic maker/taker fees, slippage,
+    and integrates Qwen 8B daily news market sentiment vectors.
     """
-    metadata = {"render_modes": ["human", "rgb_array"]}
 
     def __init__(
         self,
@@ -29,7 +63,6 @@ class CryptoTradingEnv(gym.Env):
         day_idx: Optional[int] = None,
         seed: Optional[int] = None,
     ):
-        super().__init__()
         self.config = config or TradingConfig()
         self.data_loader = data_loader
         self.qwen_engine = qwen_engine
@@ -37,10 +70,10 @@ class CryptoTradingEnv(gym.Env):
         self.fixed_day_idx = day_idx
 
         # Define Action Space: 0: HOLD, 1: BUY (100% Cash), 2: SELL (100% Crypto)
-        self.action_space = spaces.Discrete(self.config.action_dim)
+        self.action_space = DiscreteSpace(self.config.action_dim)
 
         # Define Observation Space: 31 Continuous features
-        self.observation_space = spaces.Box(
+        self.observation_space = BoxSpace(
             low=-np.inf,
             high=np.inf,
             shape=(self.config.state_dim,),
@@ -48,8 +81,8 @@ class CryptoTradingEnv(gym.Env):
         )
 
         self.rng = np.random.RandomState(seed)
-        
-        # Episode internal variables
+
+        # Episode internal state variables
         self.current_step = 0
         self.symbol = "BTC"
         self.day_idx = 0
@@ -60,7 +93,7 @@ class CryptoTradingEnv(gym.Env):
         self.news_data: Dict[str, Any] = {}
 
         # Portfolio state
-        self.initial_balance = self.config.initial_balance
+        self.initial_balance = float(self.config.initial_balance)
         self.cash = self.initial_balance
         self.crypto_held = 0.0
         self.portfolio_value = self.initial_balance
@@ -82,16 +115,15 @@ class CryptoTradingEnv(gym.Env):
             "crypto_val": [],
             "reward": [],
             "benchmark_value": [],
-            "trades": [],  # List of dicts for executed trades
+            "trades": [],
         }
 
     def reset(
         self,
-        *,
         seed: Optional[int] = None,
         options: Optional[Dict[str, Any]] = None,
     ) -> Tuple[np.ndarray, Dict[str, Any]]:
-        super().reset(seed=seed)
+        """Resets the environment for a new 1-day (1440-minute) trading session."""
         if seed is not None:
             self.rng = np.random.RandomState(seed)
 
@@ -165,7 +197,7 @@ class CryptoTradingEnv(gym.Env):
         current_price = float(self.prices[step_idx])
         pos_val = self.crypto_held * current_price
         port_val = self.cash + pos_val
-        
+
         unrealized_pnl = 0.0
         if self.crypto_held > 0 and self.entry_price > 0:
             unrealized_pnl = (current_price - self.entry_price) * self.crypto_held
@@ -186,6 +218,7 @@ class CryptoTradingEnv(gym.Env):
         return obs
 
     def step(self, action: int) -> Tuple[np.ndarray, float, bool, bool, Dict[str, Any]]:
+        """Executes one 1-minute trading step."""
         current_price = float(self.prices[self.current_step])
         step_action = int(action)
         fee_paid = 0.0
@@ -193,7 +226,6 @@ class CryptoTradingEnv(gym.Env):
 
         # Execute Action
         if step_action == 1:  # BUY
-            # Allocate all available cash into crypto
             if self.cash > 10.0:  # Minimum order size $10
                 buy_price = current_price * (1.0 + self.config.slippage)
                 fee_rate = self.config.taker_fee
@@ -217,7 +249,6 @@ class CryptoTradingEnv(gym.Env):
                 })
 
         elif step_action == 2:  # SELL
-            # Liquidate all crypto holdings to cash
             if self.crypto_held > 1e-6:
                 sell_price = current_price * (1.0 - self.config.slippage)
                 gross_revenue = self.crypto_held * sell_price
@@ -262,7 +293,7 @@ class CryptoTradingEnv(gym.Env):
         pnl_return = (self.portfolio_value - self.prev_portfolio_value) / (self.prev_portfolio_value + 1e-8)
         reward = pnl_return * self.config.pnl_reward_scale
 
-        # 2. Transaction fee penalty
+        # 2. Transaction fee / churn penalty
         if trade_occurred:
             reward -= self.config.churn_penalty_scale
 
