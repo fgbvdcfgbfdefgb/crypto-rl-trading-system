@@ -1,0 +1,850 @@
+{
+  "2026-09-15": {
+    "BTC/USDT": {
+      "headline": "Global macro tensions drive investors toward digital gold narrative as safe-haven asset demand spikes.",
+      "sentiment_score": 1.0,
+      "impact_score": 0.4,
+      "volatility_forecast": 0.25,
+      "direction_bias": 1,
+      "embedding": [
+        1.0,
+        0.4,
+        0.25,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "ETH/USDT": {
+      "headline": "Massive staking inflows push total ETH staked past 34 million ETH, reducing circulating liquid exchange supply.",
+      "sentiment_score": 1.0,
+      "impact_score": 0.5,
+      "volatility_forecast": 0.25,
+      "direction_bias": 1,
+      "embedding": [
+        1.0,
+        0.5,
+        0.25,
+        1.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    "LTC/USDT": {
+      "headline": "Litecoin halving aftermath: miner profitability stabilizes while hash rate reaches healthy equilibrium.",
+      "sentiment_score": 1.0,
+      "impact_score": 0.5,
+      "volatility_forecast": 0.25,
+      "direction_bias": 1,
+      "embedding": [
+        1.0,
+        0.5,
+        0.25,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "2026-09-16": {
+    "BTC/USDT": {
+      "headline": "US SEC approves new spot Bitcoin ETF options trading with record opening day volume of $1.9 Billion. Institutional inflows surge.",
+      "sentiment_score": 1.0,
+      "impact_score": 1.0,
+      "volatility_forecast": 0.75,
+      "direction_bias": 1,
+      "embedding": [
+        1.0,
+        1.0,
+        0.75,
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    "ETH/USDT": {
+      "headline": "DeFi lending protocol suffers flash loan exploit of $12M, causing temporary dip in Ethereum ecosystem tokens.",
+      "sentiment_score": -1.0,
+      "impact_score": 0.7,
+      "volatility_forecast": 0.8,
+      "direction_bias": -1,
+      "embedding": [
+        -1.0,
+        0.7,
+        0.8,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "LTC/USDT": {
+      "headline": "Crypto debit card issuer expands direct zero-fee cashback rewards in LTC for North American merchants.",
+      "sentiment_score": 0.0,
+      "impact_score": 0.3,
+      "volatility_forecast": 0.25,
+      "direction_bias": 0,
+      "embedding": [
+        0.0,
+        0.3,
+        0.25,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    }
+  },
+  "2026-09-17": {
+    "BTC/USDT": {
+      "headline": "Federal Reserve signals dovish stance at FOMC meeting, lowering interest rates by 25 bps. Crypto markets rally sharply.",
+      "sentiment_score": 1.0,
+      "impact_score": 1.0,
+      "volatility_forecast": 1.0,
+      "direction_bias": 1,
+      "embedding": [
+        1.0,
+        1.0,
+        1.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "ETH/USDT": {
+      "headline": "Spot Ethereum ETFs record consecutive net positive weekly inflows of $310M from European institutional asset managers.",
+      "sentiment_score": 1.0,
+      "impact_score": 1.0,
+      "volatility_forecast": 0.75,
+      "direction_bias": 1,
+      "embedding": [
+        1.0,
+        1.0,
+        0.75,
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    "LTC/USDT": {
+      "headline": "Litecoin network completes 200 millionth transaction milestone, setting new active address records.",
+      "sentiment_score": 1.0,
+      "impact_score": 0.7,
+      "volatility_forecast": 0.5,
+      "direction_bias": 1,
+      "embedding": [
+        1.0,
+        0.7,
+        0.5,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "2026-09-18": {
+    "BTC/USDT": {
+      "headline": "Major mining pool reports 15% drop in Bitcoin hash rate following Texas severe weather curtailment. Network difficulty adjusts downwards.",
+      "sentiment_score": -0.5,
+      "impact_score": 0.7,
+      "volatility_forecast": 0.7,
+      "direction_bias": -1,
+      "embedding": [
+        -0.5,
+        0.7,
+        0.7,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    "ETH/USDT": {
+      "headline": "Gas fees plummet to multi-year lows of 3 gwei as blob transactions absorb layer-2 rollup data blobs efficiently.",
+      "sentiment_score": 0.0,
+      "impact_score": 0.5,
+      "volatility_forecast": 0.4,
+      "direction_bias": 0,
+      "embedding": [
+        0.0,
+        0.5,
+        0.4,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    "LTC/USDT": {
+      "headline": "Payment processor BitPay reports Litecoin accounted for 38% of all global crypto retail payments last month.",
+      "sentiment_score": 0.0,
+      "impact_score": 0.3,
+      "volatility_forecast": 0.25,
+      "direction_bias": 0,
+      "embedding": [
+        0.0,
+        0.3,
+        0.25,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    }
+  },
+  "2026-09-19": {
+    "BTC/USDT": {
+      "headline": "Whale alert tracks 25,000 BTC transferred from cold storage to Coinbase exchange, sparking short-term selloff fears.",
+      "sentiment_score": -1.0,
+      "impact_score": 1.0,
+      "volatility_forecast": 1.0,
+      "direction_bias": -1,
+      "embedding": [
+        -1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "ETH/USDT": {
+      "headline": "Ethereum Layer 2 total value locked (TVL) hits new all-time high of $48 Billion led by Arbitrum and Base scaling.",
+      "sentiment_score": 1.0,
+      "impact_score": 0.7,
+      "volatility_forecast": 0.5,
+      "direction_bias": 1,
+      "embedding": [
+        1.0,
+        0.7,
+        0.5,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    "LTC/USDT": {
+      "headline": "Litecoin MWEB (Mimblewimble Extension Blocks) private transaction volume grows 45% month-over-month.",
+      "sentiment_score": 1.0,
+      "impact_score": 0.4,
+      "volatility_forecast": 0.25,
+      "direction_bias": 1,
+      "embedding": [
+        1.0,
+        0.4,
+        0.25,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "2026-09-20": {
+    "BTC/USDT": {
+      "headline": "Bitcoin breaks above key resistance level with heavy spot accumulation across Asian trading sessions.",
+      "sentiment_score": 1.0,
+      "impact_score": 0.5,
+      "volatility_forecast": 0.25,
+      "direction_bias": 1,
+      "embedding": [
+        1.0,
+        0.5,
+        0.25,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "ETH/USDT": {
+      "headline": "Ethereum Foundation announces next major network upgrade timeline focused on gas reduction and stateless verification.",
+      "sentiment_score": 1.0,
+      "impact_score": 0.6,
+      "volatility_forecast": 0.5,
+      "direction_bias": 1,
+      "embedding": [
+        1.0,
+        0.6,
+        0.5,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    "LTC/USDT": {
+      "headline": "Major digital asset manager files paperwork with regulators for a proposed Litecoin exchange-traded product.",
+      "sentiment_score": 0.0,
+      "impact_score": 0.3,
+      "volatility_forecast": 0.25,
+      "direction_bias": 0,
+      "embedding": [
+        0.0,
+        0.3,
+        0.25,
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ]
+    }
+  },
+  "2026-09-21": {
+    "BTC/USDT": {
+      "headline": "Regulatory uncertainty looms as US Treasury outlines stricter DeFi and crypto wallet reporting rules.",
+      "sentiment_score": 0.0,
+      "impact_score": 0.3,
+      "volatility_forecast": 0.25,
+      "direction_bias": 0,
+      "embedding": [
+        0.0,
+        0.3,
+        0.25,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "ETH/USDT": {
+      "headline": "Massive staking inflows push total ETH staked past 34 million ETH, reducing circulating liquid exchange supply.",
+      "sentiment_score": 1.0,
+      "impact_score": 0.5,
+      "volatility_forecast": 0.25,
+      "direction_bias": 1,
+      "embedding": [
+        1.0,
+        0.5,
+        0.25,
+        1.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    "LTC/USDT": {
+      "headline": "Litecoin halving aftermath: miner profitability stabilizes while hash rate reaches healthy equilibrium.",
+      "sentiment_score": 1.0,
+      "impact_score": 0.5,
+      "volatility_forecast": 0.25,
+      "direction_bias": 1,
+      "embedding": [
+        1.0,
+        0.5,
+        0.25,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "2026-09-22": {
+    "BTC/USDT": {
+      "headline": "Global macro tensions drive investors toward digital gold narrative as safe-haven asset demand spikes.",
+      "sentiment_score": 1.0,
+      "impact_score": 0.4,
+      "volatility_forecast": 0.25,
+      "direction_bias": 1,
+      "embedding": [
+        1.0,
+        0.4,
+        0.25,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "ETH/USDT": {
+      "headline": "DeFi lending protocol suffers flash loan exploit of $12M, causing temporary dip in Ethereum ecosystem tokens.",
+      "sentiment_score": -1.0,
+      "impact_score": 0.7,
+      "volatility_forecast": 0.8,
+      "direction_bias": -1,
+      "embedding": [
+        -1.0,
+        0.7,
+        0.8,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "LTC/USDT": {
+      "headline": "Crypto debit card issuer expands direct zero-fee cashback rewards in LTC for North American merchants.",
+      "sentiment_score": 0.0,
+      "impact_score": 0.3,
+      "volatility_forecast": 0.25,
+      "direction_bias": 0,
+      "embedding": [
+        0.0,
+        0.3,
+        0.25,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    }
+  },
+  "2026-09-23": {
+    "BTC/USDT": {
+      "headline": "US SEC approves new spot Bitcoin ETF options trading with record opening day volume of $1.9 Billion. Institutional inflows surge.",
+      "sentiment_score": 1.0,
+      "impact_score": 1.0,
+      "volatility_forecast": 0.75,
+      "direction_bias": 1,
+      "embedding": [
+        1.0,
+        1.0,
+        0.75,
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    "ETH/USDT": {
+      "headline": "Spot Ethereum ETFs record consecutive net positive weekly inflows of $310M from European institutional asset managers.",
+      "sentiment_score": 1.0,
+      "impact_score": 1.0,
+      "volatility_forecast": 0.75,
+      "direction_bias": 1,
+      "embedding": [
+        1.0,
+        1.0,
+        0.75,
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    "LTC/USDT": {
+      "headline": "Litecoin network completes 200 millionth transaction milestone, setting new active address records.",
+      "sentiment_score": 1.0,
+      "impact_score": 0.7,
+      "volatility_forecast": 0.5,
+      "direction_bias": 1,
+      "embedding": [
+        1.0,
+        0.7,
+        0.5,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "2026-09-24": {
+    "BTC/USDT": {
+      "headline": "Federal Reserve signals dovish stance at FOMC meeting, lowering interest rates by 25 bps. Crypto markets rally sharply.",
+      "sentiment_score": 1.0,
+      "impact_score": 1.0,
+      "volatility_forecast": 1.0,
+      "direction_bias": 1,
+      "embedding": [
+        1.0,
+        1.0,
+        1.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "ETH/USDT": {
+      "headline": "Gas fees plummet to multi-year lows of 3 gwei as blob transactions absorb layer-2 rollup data blobs efficiently.",
+      "sentiment_score": 0.0,
+      "impact_score": 0.5,
+      "volatility_forecast": 0.4,
+      "direction_bias": 0,
+      "embedding": [
+        0.0,
+        0.5,
+        0.4,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    "LTC/USDT": {
+      "headline": "Payment processor BitPay reports Litecoin accounted for 38% of all global crypto retail payments last month.",
+      "sentiment_score": 0.0,
+      "impact_score": 0.3,
+      "volatility_forecast": 0.25,
+      "direction_bias": 0,
+      "embedding": [
+        0.0,
+        0.3,
+        0.25,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    }
+  },
+  "2026-09-25": {
+    "BTC/USDT": {
+      "headline": "Major mining pool reports 15% drop in Bitcoin hash rate following Texas severe weather curtailment. Network difficulty adjusts downwards.",
+      "sentiment_score": -0.5,
+      "impact_score": 0.7,
+      "volatility_forecast": 0.7,
+      "direction_bias": -1,
+      "embedding": [
+        -0.5,
+        0.7,
+        0.7,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    "ETH/USDT": {
+      "headline": "Ethereum Layer 2 total value locked (TVL) hits new all-time high of $48 Billion led by Arbitrum and Base scaling.",
+      "sentiment_score": 1.0,
+      "impact_score": 0.7,
+      "volatility_forecast": 0.5,
+      "direction_bias": 1,
+      "embedding": [
+        1.0,
+        0.7,
+        0.5,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    "LTC/USDT": {
+      "headline": "Litecoin MWEB (Mimblewimble Extension Blocks) private transaction volume grows 45% month-over-month.",
+      "sentiment_score": 1.0,
+      "impact_score": 0.4,
+      "volatility_forecast": 0.25,
+      "direction_bias": 1,
+      "embedding": [
+        1.0,
+        0.4,
+        0.25,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "2026-09-26": {
+    "BTC/USDT": {
+      "headline": "Whale alert tracks 25,000 BTC transferred from cold storage to Coinbase exchange, sparking short-term selloff fears.",
+      "sentiment_score": -1.0,
+      "impact_score": 1.0,
+      "volatility_forecast": 1.0,
+      "direction_bias": -1,
+      "embedding": [
+        -1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "ETH/USDT": {
+      "headline": "Ethereum Foundation announces next major network upgrade timeline focused on gas reduction and stateless verification.",
+      "sentiment_score": 1.0,
+      "impact_score": 0.6,
+      "volatility_forecast": 0.5,
+      "direction_bias": 1,
+      "embedding": [
+        1.0,
+        0.6,
+        0.5,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    "LTC/USDT": {
+      "headline": "Major digital asset manager files paperwork with regulators for a proposed Litecoin exchange-traded product.",
+      "sentiment_score": 0.0,
+      "impact_score": 0.3,
+      "volatility_forecast": 0.25,
+      "direction_bias": 0,
+      "embedding": [
+        0.0,
+        0.3,
+        0.25,
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ]
+    }
+  },
+  "2026-09-27": {
+    "BTC/USDT": {
+      "headline": "Bitcoin breaks above key resistance level with heavy spot accumulation across Asian trading sessions.",
+      "sentiment_score": 1.0,
+      "impact_score": 0.5,
+      "volatility_forecast": 0.25,
+      "direction_bias": 1,
+      "embedding": [
+        1.0,
+        0.5,
+        0.25,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "ETH/USDT": {
+      "headline": "Massive staking inflows push total ETH staked past 34 million ETH, reducing circulating liquid exchange supply.",
+      "sentiment_score": 1.0,
+      "impact_score": 0.5,
+      "volatility_forecast": 0.25,
+      "direction_bias": 1,
+      "embedding": [
+        1.0,
+        0.5,
+        0.25,
+        1.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    "LTC/USDT": {
+      "headline": "Litecoin halving aftermath: miner profitability stabilizes while hash rate reaches healthy equilibrium.",
+      "sentiment_score": 1.0,
+      "impact_score": 0.5,
+      "volatility_forecast": 0.25,
+      "direction_bias": 1,
+      "embedding": [
+        1.0,
+        0.5,
+        0.25,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "2026-09-28": {
+    "BTC/USDT": {
+      "headline": "Regulatory uncertainty looms as US Treasury outlines stricter DeFi and crypto wallet reporting rules.",
+      "sentiment_score": 0.0,
+      "impact_score": 0.3,
+      "volatility_forecast": 0.25,
+      "direction_bias": 0,
+      "embedding": [
+        0.0,
+        0.3,
+        0.25,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "ETH/USDT": {
+      "headline": "DeFi lending protocol suffers flash loan exploit of $12M, causing temporary dip in Ethereum ecosystem tokens.",
+      "sentiment_score": -1.0,
+      "impact_score": 0.7,
+      "volatility_forecast": 0.8,
+      "direction_bias": -1,
+      "embedding": [
+        -1.0,
+        0.7,
+        0.8,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "LTC/USDT": {
+      "headline": "Crypto debit card issuer expands direct zero-fee cashback rewards in LTC for North American merchants.",
+      "sentiment_score": 0.0,
+      "impact_score": 0.3,
+      "volatility_forecast": 0.25,
+      "direction_bias": 0,
+      "embedding": [
+        0.0,
+        0.3,
+        0.25,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    }
+  },
+  "2026-09-29": {
+    "BTC/USDT": {
+      "headline": "Global macro tensions drive investors toward digital gold narrative as safe-haven asset demand spikes.",
+      "sentiment_score": 1.0,
+      "impact_score": 0.4,
+      "volatility_forecast": 0.25,
+      "direction_bias": 1,
+      "embedding": [
+        1.0,
+        0.4,
+        0.25,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "ETH/USDT": {
+      "headline": "Spot Ethereum ETFs record consecutive net positive weekly inflows of $310M from European institutional asset managers.",
+      "sentiment_score": 1.0,
+      "impact_score": 1.0,
+      "volatility_forecast": 0.75,
+      "direction_bias": 1,
+      "embedding": [
+        1.0,
+        1.0,
+        0.75,
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    "LTC/USDT": {
+      "headline": "Litecoin network completes 200 millionth transaction milestone, setting new active address records.",
+      "sentiment_score": 1.0,
+      "impact_score": 0.7,
+      "volatility_forecast": 0.5,
+      "direction_bias": 1,
+      "embedding": [
+        1.0,
+        0.7,
+        0.5,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "2026-09-30": {
+    "BTC/USDT": {
+      "headline": "US SEC approves new spot Bitcoin ETF options trading with record opening day volume of $1.9 Billion. Institutional inflows surge.",
+      "sentiment_score": 1.0,
+      "impact_score": 1.0,
+      "volatility_forecast": 0.75,
+      "direction_bias": 1,
+      "embedding": [
+        1.0,
+        1.0,
+        0.75,
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    "ETH/USDT": {
+      "headline": "Gas fees plummet to multi-year lows of 3 gwei as blob transactions absorb layer-2 rollup data blobs efficiently.",
+      "sentiment_score": 0.0,
+      "impact_score": 0.5,
+      "volatility_forecast": 0.4,
+      "direction_bias": 0,
+      "embedding": [
+        0.0,
+        0.5,
+        0.4,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    "LTC/USDT": {
+      "headline": "Payment processor BitPay reports Litecoin accounted for 38% of all global crypto retail payments last month.",
+      "sentiment_score": 0.0,
+      "impact_score": 0.3,
+      "volatility_forecast": 0.25,
+      "direction_bias": 0,
+      "embedding": [
+        0.0,
+        0.3,
+        0.25,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    }
+  }
+}
