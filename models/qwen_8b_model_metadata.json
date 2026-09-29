@@ -1,0 +1,6 @@
+{
+  "model_name": "Qwen/Qwen2.5-8B-Instruct",
+  "huggingface_repo": "https://huggingface.co/Qwen/Qwen2.5-8B-Instruct",
+  "git_lfs_instructions": "git lfs install && git clone https://huggingface.co/Qwen/Qwen2.5-8B-Instruct",
+  "recommended_quantization": "Q4_K_M or Q8_0 GGUF for fast CPU parallel inference"
+}
